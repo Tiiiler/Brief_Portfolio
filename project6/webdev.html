@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link href="jquery/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>A Brief Portfolio</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href = "index.html"><img src ="images/home.png" alt ="Logo" class ="move"></a></li>
+			<li><a href = "programming.html">Programming</a></li>
+			<li><a href = "webdev.html" class ="current">Web Development</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<!-- Tabs -->
+		<h2 class="demoHeaders">Web Development Projects</h2>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Informational Page</a></li>
+				<li><a href="#tabs-2">Styling Informational Page</a></li>
+				<li><a href="#tabs-3">CSS Styling</a></li>
+				<li><a href="#tabs-4">Scrapbook</a></li>
+				<li><a href="#tabs-5">Light Fidelity Quiz</a></li>
+				<li><a href="#tabs-6">About Me Portfolio</a></li>
+			</ul>
+			
+			<div id="tabs-1">
+				This assignment's purpose was to create an informational web page that includes some text and images. It also taught the basic html structure and how the documents all are connected. I made mine about the video game Counter Strike: Global Offensive. It gives some basic understanding to how the games works on a competitive level. It has no CSS styling, just text and pictures. <BR>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Basic HTML</li>
+					<li>Images</li>
+					<li>Links</li>
+				</ul>
+				<a href ="http://cs2800.cs.wright.edu/~green/project1/" target ="_blank"><h4>See Project Here</h4></a>
+			</div>
+			
+			<div id="tabs-2">
+				This assignment's purpose was to style the first web page we created. Using good techniques, a color for background and text was chosen. Along with this, was adjusting borders and margins to approprately space items for a pleasurable view. The assignment taught me how to select basic items in CSS from the HTML allowing for variation of the attributes.<BR>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Selection of HTML items in CSS</li>
+					<li>Fluid Layout Design</li>
+					<li>Basic HTML and CSS styling</li>
+				</ul>
+				<a href ="http://cs2800.cs.wright.edu/~green/project2/" target ="_blank"><h4>See Project Here</h4></a>
+			</div>
+			
+			<div id="tabs-3">
+				This assignment's purpose was to use CSS to learn how to style differnt items on a page together. It used Floating items, Flex-Box, and Text Columns to achieve a similar style of page. It showed us just what each method has to offer and why some might be better than others in certain situations. In additions to this, there is also a short description of each of the methods that were used.<BR>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Floating Items</li>
+					<li>Flex-Box</li>
+					<li>Text-Columns</li>
+					<li>Fluid Layout Design</li>
+					<li>Basic HTML and CSS styling</li>
+				</ul>
+				<a href ="http://cs2800.cs.wright.edu/~green/project3/" target ="_blank"><h4>See Project Here</h4></a>
+			</div>
+			
+			<div id="tabs-4" class ="status">
+				This assignment's purpose was to create a scrap book with pictures, audio, and video files. The topic of the site was up to us, so naturally, I went back to Counter-Strike because I figured there would be plenty of pictures and video/audio clips to find. The site has a main page and three seperate pages that go into more detail about the most important, in my opinion, skills in CS:GO.<BR>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Embed Audio and Video files</li>
+					<li>Fluid Layout Design</li>
+					<li>Basic HTML and CSS styling</li>
+				</ul>
+				<a href ="http://cs2800.cs.wright.edu/~green/project4/" target ="_blank"><h4>See Project Here</h4></a>
+			</div>
+			
+			<div id="tabs-5">
+				This assignment's purpose was to create an informational web site that includes a Javascript quiz about the information. An interesting possible alternative of wireless data transmission is Light Fidelity(Li-Fi) and I created a website bsaically describing what exactly Li-Fi is. There is a second page with a brief three question quiz about the information presented earlier. The user can also check whether or not their questions are correct on the quiz.<BR>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Javascript to create quiz and interact with user</li>
+					<li>Basic HTML and CSS styling</li>
+				</ul>
+				<a href ="http://cs2800.cs.wright.edu/~green/project5/" target ="_blank"><h4>See Project Here</h4></a>
+			</div>
+			
+			<div id="tabs-6">
+				This assignment's purpose was to create a Portfolio about ourselves and the experience we have with programming and web development. It uses the Jquery accordion and tabs to easily lay out some information about each of these topics. Each the web development and programming have their own page that decribes more in detail what exactly I have completed in college. <BR>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Jquery Accordion</li>
+					<li>Jquery Tabs</li>
+					<li>Basic HTML and CSS styling</li>					
+				</ul>
+				<a href ="http://cs2800.cs.wright.edu/~green/project6/" target ="_blank"><h4>See Project Here</h4></a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		Tyler Green - CS2800 assignment 6 - Spring 2018
+	</footer>
+	<script>
+
+	$( "#tabs" ).tabs();
+
+	</script>
+</body>
+</html>

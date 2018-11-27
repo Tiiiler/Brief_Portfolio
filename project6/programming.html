@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+	<link href="jquery/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/normalize.css">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jquery/jquery-ui.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>A Brief Portfolio</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href = "index.html"><img src ="images/home.png" alt ="Logo" class ="move"></a></li>
+			<li><a href = "programming.html" class ="current">Programming</a></li>
+			<li><a href = "webdev.html">Web Development</a></li>
+		</ul>
+	</nav>
+	<main>
+		<!-- Accordion -->
+		<h2 class="demoHeaders">Programming Assignments</h2>
+		<div id="accordion">
+			<h3>Tic-Tac-Toe Application (Freshman Year)</h3>
+			
+			<div id ="acc1">
+				<p>This assignment's purpose was to create an Android phone application using Android Studio. I re-created the game Tic-Tac-Toe. It was just a basic application that would locally let two players play back and forth. It would display who won or if it was a tie. You can also change the color of the "X" or the "O" with a button. As stated before, this project used Android Studio which is mostly java with some added jazz.<BR> </p>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>Android Studio Software</li>
+					<li>Java driven logic</li>
+				</ul>				
+				<img src ="images/tic.jpg" id ="tictactoe" alt ="TicTacToe Application">
+			</div>
+			<h3>Ardriuno Uno Song Recorder (Sophmore Year)</h3>
+			<div id ="acc2">
+				<p>This assignment's purpose was to create a program on a Ardriuno Uno board that would allow the user to record and store a short song segment. This program would allow the user to enter in keys on 4x4 keypad and the Uno board would take this input and convert each key to a different tone. You record a certain number of notes and then choose to stop recording and play the song out of a speaker also hooked to the board. You could save up to two songs at a time and switch back and forth to add notes to the end if you wanted to.<BR></p>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>C/C++ Language</li>
+					<li>Microprocessor components</li>
+					<li>Arduino Software</li>
+				</ul>			
+				<img src ="images/recorder.jpg" id ="recorder" alt ="Arduino Music Recorder">
+			</div>
+			<h3>Producer-Consumer Problem (Junior Year)</h3>
+			<div id="acc3">
+				<p>This assignment's purpose was to solve the <a href ="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem" target ="_blank">producer-consumer problem</a> using basic operating system calls and functions. It obtained input from the user on how many messages, consumers and producers there were so that each the producer and consumer could read and write to eachother in a shared memory buffer. Each producer sending information or consumer recieving it creates a thread to execute its task. In addition to this, a mutex and semaphores are created to achieve synchronization between the two programs. In other words, each program knew when its turn to execute was. This project really helped show me how an operating system decides how tasks and threads get executed at a low level.<BR></p>
+				<h4>Skills Used:</h4>
+				<ul>
+					<li>C Language</li>
+					<li>Linux OS</li>
+					<li>Operating System Components</li>
+				</ul>			
+				<img src ="images/producer.jpg" id ="producer" alt ="Producer Consumer Output">
+			</div>
+			
+			<h3>Smarter Slow Cooker (Senior Year)</h3>
+			<div id="acc4">
+			<p>For my senior project, we are to design and modify an off the shelf appliance to incoorporate the idea of the <a href ="https://www.ibm.com/blogs/internet-of-things/what-is-the-iot/" target ="_blank">Internet of Things</a>. My team and I are still in the process of completing this project, but we have our design completed. We are buying a standard low/medium/high slow cooker that we will add the following functionalities:</p>
+			<ul>
+					<li>Variable temperature to the nearest 5 degrees fahrenheit</li>
+					<li>Temperature monitoring of the bowl</li>
+					<li>The addition of and temperature monitoring of a food probe</li>
+					<li>Wi-Fi connectivity</li>
+					<li>Mixing up the contents of the bowl</li>	
+					<li>Setting/controlling a timer</li>
+			</ul>
+			<p>All of these additions will be controllable from a Android application connected to Wi-Fi (remotely) and/or from the cooker itself (locally).</p>
+				
+			</div>
+		</div>
+	</main>
+	<footer>
+		Tyler Green - CS2800 assignment 6 - Spring 2018
+	</footer>
+	<script>
+
+	$( "#accordion" ).accordion();
+
+	</script>
+</body>
+</html>
